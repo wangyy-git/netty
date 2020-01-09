@@ -18,7 +18,6 @@ public class BaseZookeeper implements Watcher {
             System.out.println("zk连接成功！");
 
             List<String> children = zk.getChildren("/", false);
-            
             children.forEach(System.out::println);
 
 //            BaseZookeeper baseZookeeper = new BaseZookeeper();
